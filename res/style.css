@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent, .child, .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} 
+.parent{
+    background-color: blue;
+    width: 400px;
+    height:400px;
+    animation: spin1 3s infinite;
+}
+.child{
+    background-color: yellow;
+    width: 250px;
+    height:250px;
+    animation: spin2 4s infinite;
+}
+.center{
+    width: 150px;
+    height: 150px;
+    background-color:red;
+    animation: spin3 2s infinite;
+    
+}
+@keyframes spin1{
+    0%{
+        transform:rotate(0deg)
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes spin2{
+    0%{
+        transform:rotate(0deg)
+    }
+    50%{
+        transform: rotate(110deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes spin3{
+    0%{
+        transform:rotate(0deg)
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
